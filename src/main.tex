@@ -1,0 +1,46 @@
+% !TEX program = lualatex
+% !TEX encoding = UTF-8
+\documentclass[letterpaper,11pt]{article}
+
+%----------PACKAGES----------
+\usepackage{fontspec}
+\usepackage[letterpaper, margin=0.5in, footskip=8pt]{geometry}
+\usepackage{titlesec}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fontawesome5}
+\usepackage{enumitem}
+\usepackage[
+  activate={true,nocompatibility},
+  final,
+  tracking=true,
+  factor=1100,
+  stretch=10,
+  shrink=10,
+]{microtype}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\usepackage{tabularx}
+\usepackage{hyperref}  % always last
+
+%----------FONT----------
+\setmainfont{SourceSans3}[
+  Extension      = .otf,
+  UprightFont    = *-Regular,
+  BoldFont       = *-Bold,
+  ItalicFont     = *-RegularIt,
+  BoldItalicFont = *-BoldIt
+]
+
+%----------SETUP----------
+\input{config}
+
+%----------DOCUMENT----------
+\begin{document}
+\input{sections/heading}
+\input{sections/summary}
+\input{sections/skills}
+\input{sections/experience}
+\input{sections/projects}
+\input{sections/education}
+\input{sections/languages}
+\end{document}
